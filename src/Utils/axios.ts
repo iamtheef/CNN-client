@@ -1,6 +1,6 @@
 import axios from "axios";
 
-let isProduction = process.env.REACT_APP_ENV?.toString() == "production";
+let isProduction = process.env.REACT_APP_ENV?.toString() === "production";
 
 export const client = axios.create({
   baseURL: isProduction

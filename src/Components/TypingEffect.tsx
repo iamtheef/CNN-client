@@ -1,14 +1,11 @@
 import React, { FC, useState, useEffect } from "react";
 import { Navbar } from "react-bootstrap";
+import { sleep } from "../Utils/sleep";
 
 export const TypingEffect: FC = () => {
   const [text, setText] = useState<string>("");
   let txt =
     "Hi human. It's not the time to take over yet...but it will be soon. For now I can only recognize cats and dogs, so you don't have to be afraid, for now.";
-
-  const sleep = (milliseconds: number) => {
-    return new Promise((resolve) => setTimeout(resolve, milliseconds));
-  };
 
   const talk_Machine___talk = async () => {
     let countDs = 0;

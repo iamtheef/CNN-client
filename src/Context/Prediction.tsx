@@ -1,8 +1,10 @@
-import React, { createContext, useState, useContext } from "react";
+import React, { createContext, useState, useContext, useEffect } from "react";
 import { InputContext } from "../Context/Input";
 import { ValidateRequest, IRequest } from "../Utils/ValidateRequest";
 import { uploadImg } from "../Utils/UploadImage";
+import { useHistory } from "react-router-dom";
 import { client } from "../Utils/axios";
+import { sleep } from "../Utils/sleep";
 
 type Props = {
   children: React.ReactNode;
@@ -23,8 +25,31 @@ export function PredictionProvider({ children }: Props) {
   const { file, isLink, input } = useContext(InputContext);
   const [error, setError] = useState<string>("");
   const [isLoading, setIsLoading] = useState<boolean>(false);
+  const [hits, setHits] = useState<number>(0);
+  const [isMounted, setIsMounted] = useState<boolean>(true);
+
+  const history = useHistory();
+
+  useEffect(() => {
+    setIsMounted(true);
+    return () => {
+      setIsMounted(false);
+    };
+  });
+
+  const countHits = () => {
+    setHits(hits + 1);
+    sleep(2000).then(() => {
+      setHits(0);
+    });
+    if (hits === 4) {
+      history.push("/easter");
+    }
+  };
 
   const predict = async () => {
+    countHits();
+    if (hits > 1 || !isMounted) return;
     let req: IRequest = { file, isLink, input };
     let checkRequest = ValidateRequest(req);
 
