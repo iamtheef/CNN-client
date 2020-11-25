@@ -1,6 +1,6 @@
 import axios from "axios";
 
-let isProduction = process.env.REACT_APP_ENV?.toString() == "production";
+let isProduction = true;
 console.log(isProduction);
 console.log(process.env.REACT_APP_api);
 console.log(process.env.REACT_APP_local);
