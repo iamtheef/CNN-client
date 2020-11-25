@@ -3,7 +3,6 @@ import { InputContext } from "../Context/Input";
 import { ValidateRequest, IRequest } from "../Utils/ValidateRequest";
 import { uploadImg } from "../Utils/UploadImage";
 import { client } from "../Utils/axios";
-import axios from "axios";
 
 type Props = {
   children: React.ReactNode;
@@ -38,12 +37,10 @@ export function PredictionProvider({ children }: Props) {
           setError(e.message);
         }
       }
-
-      axios
-        .post("http://18.158.52.156:4000/predict/", req)
+      client
+        .post("/predict/", req)
         .then((res) => {
           if (res.status === 200) {
-            console.log(res);
             setPrediction(res.data);
             setIsLoading(false);
           } else {
