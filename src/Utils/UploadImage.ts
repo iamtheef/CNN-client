@@ -6,7 +6,7 @@ export const uploadImg = async (image: any) => {
 
   return new Promise((resolve, reject) => {
     client
-      .post("http://18.158.52.156:4000/upload/", file)
+      .post("/upload/", file)
       .then((res) => {
         resolve(res.data);
       })

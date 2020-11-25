@@ -38,7 +38,7 @@ export function PredictionProvider({ children }: Props) {
         }
       }
       client
-        .post("http://18.158.52.156:4000/predict/", req)
+        .post("/predict/", req)
         .then((res) => {
           if (res.status === 200) {
             setPrediction(res.data);
