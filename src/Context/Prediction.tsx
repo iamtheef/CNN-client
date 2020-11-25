@@ -42,6 +42,7 @@ export function PredictionProvider({ children }: Props) {
         .post("/predict/", req)
         .then((res) => {
           if (res.status === 200) {
+            console.log(res);
             setPrediction(res.data);
             setIsLoading(false);
           } else {

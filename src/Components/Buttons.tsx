@@ -12,8 +12,8 @@ export const Buttons: FC = () => {
         <Button
           variant="light"
           className="predict-button"
-          onClick={(e) => {
-            predict();
+          onClick={async (e) => {
+            await predict();
           }}
         >
           Predict

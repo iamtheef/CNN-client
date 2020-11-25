@@ -94,11 +94,10 @@
   margin-top: 8%;
   margin-bottom: -5%;
   width: 100%;
-  margin-left: auto;
+  margin-left: -1% !important;
   position: relative;
   -ms-transform: translateY(860%);
   transform: translateY(860%);
-  color: red;
 }
 
 .toggle {
