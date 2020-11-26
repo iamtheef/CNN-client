@@ -12,6 +12,7 @@ export const Egg: FC = () => {
               the future to take you out.
             </p>
             <img
+              alt="gif"
               src="https://media.giphy.com/media/IZY2SE2JmPgFG/source.gif"
               width="100%"
             />

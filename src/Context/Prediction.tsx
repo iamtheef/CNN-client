@@ -35,7 +35,7 @@ export function PredictionProvider({ children }: Props) {
     return () => {
       setIsMounted(false);
     };
-  });
+  }, []);
 
   const countHits = () => {
     setHits(hits + 1);

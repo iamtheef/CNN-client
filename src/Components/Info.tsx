@@ -11,14 +11,37 @@ export const Info: FC = () => {
           <Card body>
             <h1>Some info</h1>
             <p>
-              This app was designed by <b>Thergiakis Eftichios </b>by{" "}
-              <b>November 2020</b>. It runs a flask API in the backend in order
-              to retrieve the model and being able to make the predictions. The
-              model as of the last training has an accuracy of 93%, not perfect
-              but it can be better if it gets extensively trained in a larger
-              dataset. You can always contact the developer of this app on the
-              email <b>iamthteef_th@protonmail.com</b> and on discord under the
-              nickname <b>Th#1833</b>.
+              This app was designed by{" "}
+              <a
+                href="https://iamtheef.github.io/portofolio/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <b>Thergiakis Eftichios </b>{" "}
+              </a>
+              by <b>November 2020</b>. It runs a flask API in the backend in
+              order to retrieve the model and being able to make the
+              predictions. The model as of the last training has an accuracy of
+              93%, not perfect but it can be better if it gets extensively
+              trained in a larger dataset. Your uploaded images are kept on the
+              server only for a few milliseconds and then they get deleted
+              immediatelly after the model has finished. You can always contact
+              the developer of this app on the email{"  "}
+              <a
+                href="mailto:iamtheef_th@protonmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <b>iamthteef_th@protonmail.com</b>
+              </a>{" "}
+              and on discord under the nickname{" "}
+              <a
+                href="https://discordapp.com/users/469766971437613057"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <b>Th#1833</b>.
+              </a>
             </p>
             <h6>{"Thanks for coming this far... :)"}</h6>
 
