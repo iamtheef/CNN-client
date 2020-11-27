@@ -1,3 +1,4 @@
+import { checkFileType } from "./CheckFileType";
 export interface IRequest {
   input: string;
   isLink: string;
@@ -16,6 +17,10 @@ export const ValidateRequest = (req: IRequest) => {
 
   if (isLink && input.length === 0) {
     errors.push("Please fill in a link");
+  }
+
+  if (!!file && !checkFileType(file)) {
+    errors.push("Unsuported filetype");
   }
 
   if (!isLink && !file) {

@@ -27,14 +27,8 @@ export const Info: FC = () => {
               server only for a few milliseconds and then they get deleted
               immediatelly after the model has finished. You can always contact
               the developer of this app on the email{"  "}
-              <a
-                href="mailto:iamtheef_th@protonmail.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <b>iamthteef_th@protonmail.com</b>
-              </a>{" "}
-              and on discord under the nickname{" "}
+              <b>iamthteef_th@protonmail.com</b> and on discord under the
+              nickname{" "}
               <a
                 href="https://discordapp.com/users/469766971437613057"
                 target="_blank"

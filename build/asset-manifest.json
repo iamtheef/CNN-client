@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.b844fa69.chunk.css",
-    "main.js": "/static/js/main.56044edf.chunk.js",
-    "main.js.map": "/static/js/main.56044edf.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.60df10c3.js",
-    "runtime-main.js.map": "/static/js/runtime-main.60df10c3.js.map",
-    "static/css/2.20aa2d7b.chunk.css": "/static/css/2.20aa2d7b.chunk.css",
-    "static/js/2.e42c51a6.chunk.js": "/static/js/2.e42c51a6.chunk.js",
-    "static/js/2.e42c51a6.chunk.js.map": "/static/js/2.e42c51a6.chunk.js.map",
-    "static/js/3.569ee8af.chunk.js": "/static/js/3.569ee8af.chunk.js",
-    "static/js/3.569ee8af.chunk.js.map": "/static/js/3.569ee8af.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/2.20aa2d7b.chunk.css.map": "/static/css/2.20aa2d7b.chunk.css.map",
-    "static/css/main.b844fa69.chunk.css.map": "/static/css/main.b844fa69.chunk.css.map",
-    "static/js/2.e42c51a6.chunk.js.LICENSE.txt": "/static/js/2.e42c51a6.chunk.js.LICENSE.txt"
+    "main.css": "/CNN-Client/static/css/main.b844fa69.chunk.css",
+    "main.js": "/CNN-Client/static/js/main.cbe5dd2f.chunk.js",
+    "main.js.map": "/CNN-Client/static/js/main.cbe5dd2f.chunk.js.map",
+    "runtime-main.js": "/CNN-Client/static/js/runtime-main.18654568.js",
+    "runtime-main.js.map": "/CNN-Client/static/js/runtime-main.18654568.js.map",
+    "static/css/2.20aa2d7b.chunk.css": "/CNN-Client/static/css/2.20aa2d7b.chunk.css",
+    "static/js/2.e42c51a6.chunk.js": "/CNN-Client/static/js/2.e42c51a6.chunk.js",
+    "static/js/2.e42c51a6.chunk.js.map": "/CNN-Client/static/js/2.e42c51a6.chunk.js.map",
+    "static/js/3.569ee8af.chunk.js": "/CNN-Client/static/js/3.569ee8af.chunk.js",
+    "static/js/3.569ee8af.chunk.js.map": "/CNN-Client/static/js/3.569ee8af.chunk.js.map",
+    "index.html": "/CNN-Client/index.html",
+    "static/css/2.20aa2d7b.chunk.css.map": "/CNN-Client/static/css/2.20aa2d7b.chunk.css.map",
+    "static/css/main.b844fa69.chunk.css.map": "/CNN-Client/static/css/main.b844fa69.chunk.css.map",
+    "static/js/2.e42c51a6.chunk.js.LICENSE.txt": "/CNN-Client/static/js/2.e42c51a6.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.60df10c3.js",
+    "static/js/runtime-main.18654568.js",
     "static/css/2.20aa2d7b.chunk.css",
     "static/js/2.e42c51a6.chunk.js",
     "static/css/main.b844fa69.chunk.css",
-    "static/js/main.56044edf.chunk.js"
+    "static/js/main.cbe5dd2f.chunk.js"
   ]
 }

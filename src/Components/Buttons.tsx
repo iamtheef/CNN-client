@@ -16,7 +16,7 @@ export const Buttons: FC = () => {
             await predict();
           }}
         >
-          Predict
+          Guess
         </Button>
       </Row>
       <MessageBoard />

@@ -4,7 +4,6 @@
   const app = express();
 
   app.use(express.static(path.join(__dirname, "build")));
-
   app.listen(80);
   console.log("Serving on 80");
   console.log("*".repeat(10));
