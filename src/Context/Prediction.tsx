@@ -54,6 +54,7 @@ export function PredictionProvider({ children }: Props) {
     let checkRequest = ValidateRequest(req);
 
     if (checkRequest.isOK) {
+      setError("");
       setIsLoading(true);
       if (!isLink && !!file) {
         try {
