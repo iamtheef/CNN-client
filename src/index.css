@@ -59,6 +59,7 @@
 }
 
 .predict-button {
+  margin-left: 4px;
   transform: translateY(1400%);
 }
 
@@ -152,7 +153,7 @@
     margin-left: 5% !important;
   }
   .predict-button {
-    margin-left: 7% !important;
+    margin-left: 8% !important;
   }
 
   #input-canvas {

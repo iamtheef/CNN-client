@@ -11,16 +11,16 @@ export const MessageBoard: FC = () => {
         <Spinner animation="border" variant="light" className="spinner" />
       </Col>
     );
-  } else if (prediction.success) {
-    return (
-      <Alert variant="success" className="message-board">
-        {`It's a ${prediction.message}!`}
-      </Alert>
-    );
   } else if (error.length > 0) {
     return (
       <Alert variant="danger" className="message-board">
         {error}
+      </Alert>
+    );
+  } else if (prediction.success) {
+    return (
+      <Alert variant="success" className="message-board">
+        {`It's a ${prediction.message}!`}
       </Alert>
     );
   } else {

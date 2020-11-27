@@ -49,7 +49,7 @@ export function PredictionProvider({ children }: Props) {
 
   const predict = async () => {
     countHits();
-    if (hits > 1 || !isMounted) return;
+    if (hits > 0 || !isMounted) return;
     let req: IRequest = { file, isLink, input };
     let checkRequest = ValidateRequest(req);
 

@@ -1,4 +1,4 @@
-import { checkFileType } from "./CheckFileType";
+import { isSupported } from "./CheckFileType";
 export interface IRequest {
   input: string;
   isLink: string;
@@ -16,15 +16,15 @@ export const ValidateRequest = (req: IRequest) => {
   const { input, isLink, file } = req;
 
   if (isLink && input.length === 0) {
-    errors.push("Please fill in a link");
+    errors.push("Please fill in a link.");
   }
 
-  if (!!file && !checkFileType(file)) {
-    errors.push("Unsuported filetype");
+  if (!!file && !isSupported(file)) {
+    errors.push("Not supported type of file.");
   }
 
   if (!isLink && !file) {
-    errors.push("Please select a file first");
+    errors.push("Please select a file.");
   }
 
   return { isOK: errors.length === 0, errors } as ValidationRepsonse;
