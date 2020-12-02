@@ -2,9 +2,11 @@ import React from "react";
 import { Background } from "./Components/Background";
 import { TypingEffect } from "./Components/TypingEffect";
 import { MainRoom } from "./Components/MainRoom";
-import { Info } from "./Components/Info";
-import { Egg } from "./Components/Egg";
 import { Switch, HashRouter, Route } from "react-router-dom";
+import loadable from "@loadable/component";
+
+const Info = loadable(() => import("./Components/Info"));
+const Egg = loadable(() => import("./Components/Egg"));
 
 function App() {
   return (

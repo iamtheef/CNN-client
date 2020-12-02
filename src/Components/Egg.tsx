@@ -1,7 +1,8 @@
-import React, { FC } from "react";
+import React from "react";
 import { Row, Col, Container } from "react-bootstrap";
 
-export const Egg: FC = () => {
+// @loadble/components has a bug importing FC components hence using a default export
+export default () => {
   return (
     <div className="egg">
       <Container>

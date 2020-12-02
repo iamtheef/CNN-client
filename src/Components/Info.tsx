@@ -1,8 +1,9 @@
-import React, { FC } from "react";
+import React from "react";
 import { Container, Row, Card } from "react-bootstrap";
 import { BackIcon } from "../assets/BackIcon";
 
-export const Info: FC = () => {
+// @loadble/components has a bug importing FC components hence using a default export
+export default () => {
   return (
     <div>
       <BackIcon />
